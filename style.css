@@ -10,6 +10,10 @@
     text-decoration: none;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 button{
     border: none;
     outline: none;
@@ -72,7 +76,7 @@ button:hover{
 }
 .hero h1{
     color: #7E25CA;
-    font-size: 80px;
+    font-size: clamp(50px, 10vw, 80px);
     text-align: center;
     padding: 20px;
     font-weight: 600;
@@ -128,7 +132,7 @@ button:hover{
 
 .features-heading h1{
     color: #7E25CA;
-    font-size: 80px;
+    font-size: clamp(50px, 10vw, 80px);
     text-align: center;
     padding: 20px;
     font-weight: 600;
@@ -136,7 +140,9 @@ button:hover{
 }
 
 .features-heading span{
-    color: #ea3c56;
+    background: linear-gradient(#EA3C56, #CE50FA);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .features-heading p{
@@ -189,6 +195,11 @@ button:hover{
     box-shadow: 0 0 10px;
 }
 
+.desc-img img{
+    width: clamp(280px, 40vw, 500px);
+    border-radius: 5px;
+}
+
 .faq{
     width: 100%;
     min-height: 100vh;
@@ -198,7 +209,7 @@ button:hover{
 
 .faq h1{
     color: #7E25CA;
-    font-size: 80px;
+    font-size: clamp(50px, 10vw, 80px);
     text-align: center;
     padding: 20px;
     font-weight: 600;
@@ -243,7 +254,6 @@ button:hover{
 }
 
 .footer .btn button:hover{
-    color: #fff;
     transition: 0.3s;
     border-radius: 5px;
     box-shadow: 0 0 10px #7E25CA;
@@ -286,3 +296,17 @@ button:hover{
     border: none;
     margin: 20px 0;
 }
+
+
+
+/* .hr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #CE50FA;
+    margin-top: 30px;
+    width: 40%;
+    height: 3px;
+    position: absolute;
+    right: clamp(40vw, auto, 50vw);
+} */
