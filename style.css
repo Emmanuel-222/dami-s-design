@@ -25,7 +25,7 @@ button{
     color: #7E25CA;
     padding: 10px 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px #CE50FA;
+    box-shadow: 0 0 4px #CE50FA;
     transition: 0.3s;
 }
 button:hover{
@@ -33,7 +33,7 @@ button:hover{
     color: #fff;
     transition: 0.3s;
     border-radius: 5px;
-    box-shadow: 0 0 10px #7E25CA;
+    box-shadow: 0 0 4px #7E25CA;
     padding: 10px 20px;
 }
 
@@ -45,7 +45,7 @@ button:hover{
     padding: 20px 5%;
     background-color: transparent;
     background-color: #fff;
-    box-shadow: 0 0 10px #CE50FA;
+    box-shadow: 0 0 4px #CE50FA;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -97,7 +97,8 @@ button:hover{
 }
 
 .hero a{
-    color: #CE50FA;
+    /* color: #CE50FA; */
+    color: #EA3C56;
     text-decoration: underline;
 }
 
@@ -141,6 +142,7 @@ button:hover{
 
 .features-heading span{
     background: linear-gradient(#EA3C56, #CE50FA);
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -192,7 +194,7 @@ button:hover{
 .desc-img{
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px;
+    box-shadow: 0 0 4px;
 }
 
 .desc-img img{
@@ -231,6 +233,7 @@ button:hover{
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+    width: 100%;
     gap: 10px;
     color: #fff;
     justify-content: space-between;
@@ -249,14 +252,14 @@ button:hover{
     color: #7E25CA;
     padding: 10px 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px #7E25CA;
+    box-shadow: 0 0 4px #7E25CA;
     transition: 0.3s;
 }
 
 .footer .btn button:hover{
     transition: 0.3s;
     border-radius: 5px;
-    box-shadow: 0 0 10px #7E25CA;
+    box-shadow: 0 0 4px #7E25CA;
     padding: 10px 20px;
 }
 
@@ -297,16 +300,9 @@ button:hover{
     margin: 20px 0;
 }
 
+@media (max-width: 450px) {
+    .container-handles{
+        border-top: #CE50FA 2px solid;
+    }
+}
 
-
-/* .hr{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #CE50FA;
-    margin-top: 30px;
-    width: 40%;
-    height: 3px;
-    position: absolute;
-    right: clamp(40vw, auto, 50vw);
-} */
